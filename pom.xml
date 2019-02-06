@@ -424,6 +424,11 @@
            <id>maven-snapshots</id>
            <url>http://10.242.56.193:8081/repository/maven-snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://10.242.56.193:8081/repository/maven-releases</url>
+        </repository>
+
     </distributionManagement>
 
     <url>demopetclinic</url>
