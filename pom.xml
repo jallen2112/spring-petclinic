@@ -420,13 +420,26 @@
         </plugins>
     </reporting>
     
-    <repositories>
-      <repository>
-          <id>maven-snapshots</id>
-          <name>maven-snapshots</name>
-          <url>http://localhost:8081/repository/maven-snapshots</url>
-      </repository>
-    </repositories>
+   
+   <repositories>  
+     <repository>
+       <releases>
+         <enabled>false</enabled>
+         <updatePolicy>always</updatePolicy>
+         <checksumPolicy>warn</checksumPolicy>
+       </releases>
+       <snapshots>
+         <enabled>true</enabled>
+         <updatePolicy>never</updatePolicy>
+         <checksumPolicy>fail</checksumPolicy>
+       </snapshots>
+       <id>maven-snapshots</id>
+       <name>maven-snapshots</name>
+       <url>http://localhost:8081/repository/maven-snapshots</url>
+       <layout>default</layout>
+     </repository>
+   </repositories>
+
 
     <distributionManagement> 
         <snapshotRepository>
