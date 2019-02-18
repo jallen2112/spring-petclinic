@@ -373,9 +373,9 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                  <url>http://localhost:8080/manager/text</url>
+                  <url>http://10.242.98.51:8080/manager/text</url>
                   <server>TomcatServer</server>
-                  <path>/myapp</path>
+                  <path>/petclinic</path>
                     <!--<server>tomcat-development-server</server>
                     <port>9966</port>
                     <path>/petclinic</path>-->
