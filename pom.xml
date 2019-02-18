@@ -329,7 +329,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warName>spring-petclinic-1.0.0-SNAPSHOT</warName>
+                    <warName>petclinic</warName>
                     <!-- <warName>spring-petclinic-1.0.0-SNAPSHOT</warName> -->
                 </configuration>
             </plugin>
@@ -377,6 +377,7 @@
                   <url>http://192.168.0.32:8080/manager/text</url>
                   <server>TomcatServer</server>
                   <path>/petclinic</path>
+                  <warFile>petclinic</warFile>
                     <!--<server>tomcat-development-server</server>
                     <port>9966</port>
                     <path>/petclinic</path>-->
