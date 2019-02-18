@@ -377,7 +377,7 @@
                   <url>http://192.168.0.32:8080/manager/text</url>
                   <server>TomcatServer</server>
                   <path>/petclinic</path>
-                  <warFile>petclinic</warFile>
+                  <warFile>/target/petclinic</warFile>
                     <!--<server>tomcat-development-server</server>
                     <port>9966</port>
                     <path>/petclinic</path>-->
