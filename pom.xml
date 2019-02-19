@@ -376,6 +376,8 @@
                 <configuration>
                   <url>http://10.0.0.163:8080/manager/text</url>
                   <server>TomcatServer</server>
+                  <username>admin</username>
+                  <password>password</password>
                   <path>/petclinic</path>
                   <warFile>${project.build.directory}/petclinic.war</warFile>
                     <!--<server>tomcat-development-server</server>
