@@ -450,7 +450,7 @@
     <distributionManagement> 
         <snapshotRepository>
            <id>maven-snapshots</id>
-           <url>http://192.168.0.12:8081/repository/maven-snapshots</url>
+           <url>http://nexus5:8081/repository/maven-snapshots</url>
         </snapshotRepository>
         <repository>
             <id>maven-releases</id>
