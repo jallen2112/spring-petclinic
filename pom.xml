@@ -441,7 +441,7 @@
        </snapshots>
        <id>maven-snapshots</id>
        <name>maven-snapshots</name>
-       <url>http://192.168.0.12:8081/repository/maven-snapshots</url>
+       <url>http://nexus5:8081/repository/maven-snapshots</url>
        <layout>default</layout>
      </repository>
    </repositories>
