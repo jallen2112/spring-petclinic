@@ -427,7 +427,7 @@
         </plugins>
     </reporting>
     
-   
+   <!--
    <repositories>  
      <repository>
        <releases>
@@ -445,7 +445,7 @@
        <url>http://nexus5:8081/repository/maven-snapshots</url>
        <layout>default</layout>
      </repository>
-   </repositories>
+   </repositories> -->
 
 
     <distributionManagement> 
