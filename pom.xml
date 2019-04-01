@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
     <artifactId>spring-petclinic</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
-    <name>petclinic</name> 
+    <name>petclinic</name>
     <packaging>war</packaging>
 
     <properties>
@@ -178,7 +178,6 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
-	    <!-- <version>2.10.1-SNAPSHOT</version> -->
         </dependency>
         <dependency>
             <groupId>joda-time</groupId>
@@ -332,8 +331,6 @@
                 <configuration>
                     <warName>petclinic</warName>
                     <outputDirectory>/usr/share/tomcat/webapps</outputDirectory>
-
-                    <!-- <warName>spring-petclinic-1.0.0-SNAPSHOT</warName> -->
                 </configuration>
             </plugin>
             <plugin>
@@ -377,15 +374,9 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                  <url>http://ec2-34-215-76-9.us-west-2.compute.amazonaws.com:8080/manager/text</url>
-                  <server>TomcatServer</server>
-                  <username>admin</username>
-                  <password>password</password>
-                  <path>/petclinic</path>
-                  <warFile>${project.build.directory}/petclinic.war</warFile>
-                    <!--<server>tomcat-development-server</server>
+                    <server>tomcat-development-server</server>
                     <port>9966</port>
-                    <path>/petclinic</path>-->
+                    <path>/petclinic</path>
                 </configuration>
             </plugin>
             <plugin>
@@ -428,39 +419,18 @@
             </plugin>
         </plugins>
     </reporting>
-    
-   <!--
-   <repositories>  
-     <repository>
-       <releases>
-         <enabled>false</enabled>
-         <updatePolicy>always</updatePolicy>
-         <checksumPolicy>warn</checksumPolicy>
-       </releases>
-       <snapshots>
-         <enabled>true</enabled>
-         <updatePolicy>never</updatePolicy>
-         <checksumPolicy>fail</checksumPolicy>
-       </snapshots>
-       <id>maven-snapshots</id>
-       <name>maven-snapshots</name>
-       <url>http://nexus5:8081/repository/maven-snapshots</url>
-       <layout>default</layout>
-     </repository>
-   </repositories> -->
 
-
-    <distributionManagement> 
+    <distributionManagement>
         <snapshotRepository>
-           <id>maven-snapshots</id>
-           <url>http://nexus5:8081/repository/maven-snapshots</url>
+            <id>snapshots</id>
+            <url>http://nexus:8081/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>maven-releases</id>
-            <url>http://localhost:8081/repository/maven-releases</url>
+            <id>releases</id>
+            <url>http://nexus:8081/nexus/content/repositories/releases</url>
         </repository>
-
     </distributionManagement>
 
     <url>demopetclinic</url>
 </project>
+
