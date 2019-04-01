@@ -331,6 +331,8 @@
                 <version>2.3</version>
                 <configuration>
                     <warName>petclinic</warName>
+                    <outputDirectory>/usr/share/tomcat/webapps</outputDirectory>
+
                     <!-- <warName>spring-petclinic-1.0.0-SNAPSHOT</warName> -->
                 </configuration>
             </plugin>
